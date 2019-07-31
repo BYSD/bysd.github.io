@@ -82,8 +82,9 @@ analytics:
 author:
   name             : "Yasser Salah Eddine Bouchareb"
   avatar           : "profile.png"
-  bio              : "Currently, I am a summer intern at Mila - Quebec Artificial Intelligence Institute. My research interest are in data analytics and machine learning. I'm mostly focus on computer vision applied to health care and agriculture. "
-  location         : "6666 St Urbain St, Montreal, QC H2S 3H1"
+  bio              : "Currently, I am a summer intern at Mila - Quebec Artificial Intelligence Institute."
+  location         : "6666 St Urbain St, 
+                      Montreal, QC H2S 3H1"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.ca/citations?user=SbdDnPIAAAAJ&hl=en&authuser=1"
@@ -94,15 +95,15 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "https://www.facebook.com/BYSD10"
+  facebook         : "BYSD10"
   foursquare       :
-  github           : "https://github.com/BYSD"
+  github           : "BYSD"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/bysd/"
+  linkedin         : "bysd"
   orcid            : "https://orcid.org/0000-0002-8374-9513"
   pinterest        :
   soundcloud       :
