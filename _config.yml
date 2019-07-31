@@ -83,8 +83,9 @@ author:
   name             : "Yasser Salah Eddine Bouchareb"
   avatar           : "profile.png"
   bio              : "Currently, I am a summer intern at Mila - Quebec Artificial Intelligence Institute."
-  location         : "6666 St Urbain St, 
-                      Montreal, QC H2S 3H1"
+  location         : >
+                      "6666 St Urbain St, 
+                       Montreal, QC H2S 3H1"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.ca/citations?user=SbdDnPIAAAAJ&hl=en&authuser=1"
