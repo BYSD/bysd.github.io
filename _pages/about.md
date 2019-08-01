@@ -16,17 +16,12 @@ My name is Yasser Salah Eddine Bouchareb from Algeria. I am a dedicated mathemat
 
 Short biography
 ======
-Intern at Mila - Quebec Artificial Intelligence Institute, Canada, Ongoing
-
-MSc (Machine Intelligence), AIMS, Rwanda, 2019
-
-MSc (Mathematical Sciences), University of Cape Town, South Africa, 2018
-
-Lecturer of Mathematics, University of Constantine 1, Algeria, 2016-2017
-
-MSc (Probability and Statistics), University of Constantine 1, Algeria, 2017
-
-BSc (Mathematical Sciences), University of Constantine 1, Algeria, 2015
+- Intern at Mila - Quebec Artificial Intelligence Institute, Canada, Ongoing
+- MSc (Machine Intelligence), AIMS, Rwanda, 2019
+- MSc (Mathematical Sciences), University of Cape Town, South Africa, 2018
+- Lecturer of Mathematics, University of Constantine 1, Algeria, 2016-2017
+- MSc (Probability and Statistics), University of Constantine 1, Algeria, 2017
+- BSc (Mathematical Sciences), University of Constantine 1, Algeria, 2015
 
 Quick links
 ------
