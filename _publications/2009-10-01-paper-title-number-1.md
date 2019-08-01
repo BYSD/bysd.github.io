@@ -1,7 +1,7 @@
 ---
 title: "Machine learning applied to aerial images for vegetation detection"
 collection: publications
-permalink: /publication/2018-06-21-paper-title-number-1.md
+permalink: /publication/2009-10-01-paper-title-number-1.md
 excerpt: 'This is my MSc thesis.'
 date: 2018-06-21
 venue: 'University of Cape Town (South Africa)'
