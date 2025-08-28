@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yasser Salah Eddine Bouchareb - Data Scientist, Mathematician, and AI Researcher. Explore cutting-edge research in machine learning, data science, and mathematical innovation.">
+    <meta name="keywords" content="Data Scientist, AI Researcher, Machine Learning, Mathematics, Deep Learning, Computer Vision, Satellite Imagery, Research, Portfolio">
+    <meta name="author" content="Yasser Salah Eddine Bouchareb">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bysd.github.io/">
+    <meta property="og:title" content="Yasser | Data Scientist & AI Researcher">
+    <meta property="og:description" content="Passionate Data Scientist and AI Researcher pushing the boundaries of artificial intelligence and mathematical innovation.">
+    <meta property="og:image" content="https://bysd.github.io/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bysd.github.io/">
+    <meta property="twitter:title" content="Yasser | Data Scientist & AI Researcher">
+    <meta property="twitter:description" content="Passionate Data Scientist and AI Researcher pushing the boundaries of artificial intelligence and mathematical innovation.">
+    <meta property="twitter:image" content="https://bysd.github.io/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <title>Yasser | Data Scientist & AI Researcher Portfolio</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle"></div>
+                <div class="logo-text">BYSD</div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Loading amazing things...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#writing" class="nav-link">Writing</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles-bg" id="particles-bg"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Innovation Awaits</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">Hello, I'm</span>
+                        <span class="title-main">Yasser Salah Eddine Bouchareb</span>
+                        <span class="title-subtitle">Data Scientist • Mathematician • AI Researcher</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Pushing the boundaries of artificial intelligence and mathematical research. 
+                        Exploring the intersection of deep learning, data science, and innovative applications.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('about')">
+                            <i class="fas fa-arrow-down"></i>
+                            Discover My Work
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="card card-1">
+                            <i class="fas fa-microchip"></i>
+                            <span>Tech</span>
+                        </div>
+                        <div class="card card-2">
+                            <i class="fas fa-flask"></i>
+                            <span>Research</span>
+                        </div>
+                        <div class="card card-3">
+                            <i class="fas fa-pen-fancy"></i>
+                            <span>Writing</span>
+                        </div>
+                        <div class="card card-4">
+                            <i class="fas fa-square-root-alt"></i>
+                            <span>Mathematics</span>
+                        </div>
+                        <div class="card card-5 card-ai">
+                            <i class="fas fa-robot"></i>
+                            <span>AI</span>
+                        </div>
+                        <div class="card card-6">
+                            <i class="fas fa-bicycle"></i>
+                            <span>Sport</span>
+                        </div>
+                        <div class="card card-7">
+                            <i class="fas fa-book-open"></i>
+                            <span>Reading</span>
+                        </div>
+                        <div class="card card-8">
+                            <i class="fas fa-plane"></i>
+                            <span>Travel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- About Section -->
+    <section class="about section-animate" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Discover the person behind the innovation</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Data Scientist & Mathematician</h3>
+                        <p>
+                            Yasser Salah Eddine Bouchareb is a data scientist and mathematician specializing in deep learning and computational material science. He is currently a Ph.D. candidate in Energy and Materials Sciences at INRS in Montreal, Canada. His research focuses on accelerating the discovery of materials for carbon capture using machine learning and density functional theory (DFT).
+                        </p>
+                        <p>
+                            Yasser was previously an AI Resident at Google Research, where he worked on deep learning theory and applications. He holds multiple master's degrees in applied mathematics and machine intelligence from AIMS Rwanda, AIMS South Africa, University of Cape Town, and the University of Constantine. His work spans from large-scale satellite-based building detection in Africa to disease classification in crops, and he's an active contributor to the African AI community through events like Deep Learning Indaba.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <div class="image-placeholder">Y</div>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <div class="stat-number">6+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Research Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">8+</div>
+                                <div class="stat-label">Publications</div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-research-areas">
+                            <h4>Research Areas</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">Deep Learning</span>
+                                <span class="skill-tag">Computational Material Science</span>
+                                <span class="skill-tag">Density Functional Theory</span>
+                                <span class="skill-tag">Carbon Capture Materials</span>
+                                <span class="skill-tag">Computer Vision</span>
+                                <span class="skill-tag">Satellite Imagery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section-animate" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education Journey</h2>
+                <p class="section-subtitle">Academic foundation that shaped my future</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep. 2022 - Present</div>
+                        <h3>Doctorate in Energy and Materials Sciences</h3>
+                        <p class="institution">Institut national de la recherche scientifique</p>
+                        <p class="field">Montreal, Canada</p>
+                        <p class="description">
+                            Pursuing advanced research in energy and materials sciences.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep. 2018 - Jun. 2019</div>
+                        <h3>Master's Degree in Machine Intelligence</h3>
+                        <p class="institution">African Institute for Mathematical Sciences</p>
+                        <p class="field">Kigali, Rwanda</p>
+                        <p class="description">
+                            Awarded a full scholarship to attend the first African Master in Machine Intelligence in Partnership With Facebook and Google.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug. 2017 - Jun. 2018</div>
+                        <h3>Master's Degree in Applied Mathematics with Distinction</h3>
+                        <p class="institution">University of Cape Town - African Institute for Mathematical Sciences</p>
+                        <p class="field">Cape Town, South Africa</p>
+                        <p class="description">
+                            Awarded Victor Rothschild Scholarship reserved for top students.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep. 2015 - Jul. 2017</div>
+                        <h3>Master's Degree in Probability and Statistics with Distinction</h3>
+                        <p class="institution">University of Constantine 1</p>
+                        <p class="field">Constantine, Algeria</p>
+                        <p class="description">
+                            Chosen valedictorian out of 26 students.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep. 2012 - Jun. 2015</div>
+                        <h3>Bachelor's Degree in Mathematics and Computer Science</h3>
+                        <p class="institution">University of Constantine 1</p>
+                        <p class="field">Constantine, Algeria</p>
+                        <p class="description">
+                            Foundation in mathematics and computer science principles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section-animate" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Journey through research and innovation</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2019 - Jun 2022</div>
+                        <h3>AI Resident</h3>
+                        <p class="institution">Google AI</p>
+                        <p class="field">Accra, Ghana</p>
+                        <p class="description">
+                            AI Resident focused on research in Deep Learning - Theory and Applications. 
+                            Worked on variety of projects, some of which were internal contributions.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun. 2019 - Oct. 2019</div>
+                        <h3>Research Intern</h3>
+                        <p class="institution">Mila - Quebec AI Institute</p>
+                        <p class="field">Montreal, Quebec</p>
+                        <p class="description">
+                            Researched segmentation algorithms for pinpointing bridges from satellite images 
+                            for crisis preparedness. Worked closely with researchers from Intel AI Lab and American Red Cross.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Satellite Imagery</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan. 2018 - Jun. 2018</div>
+                        <h3>Teaching Assistant</h3>
+                        <p class="institution">AIMSSEC</p>
+                        <p class="field">Cape Town, South Africa</p>
+                        <p class="description">
+                            Taught mathematics to high school learners, contributing to educational 
+                            development and mathematical literacy.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Teaching</span>
+                            <span class="tag">Mathematics</span>
+                            <span class="tag">Education</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct. 2016 - Jun. 2017</div>
+                        <h3>Teaching Assistant</h3>
+                        <p class="institution">University of Constantine 1</p>
+                        <p class="field">Constantine, Algeria</p>
+                        <p class="description">
+                            Taught first year students Linear Algebra and calculus classes, 
+                            helping build strong mathematical foundations.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Teaching</span>
+                            <span class="tag">Linear Algebra</span>
+                            <span class="tag">Calculus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications section-animate" id="publications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Publications</h2>
+                <p class="section-subtitle">Contributions to the scientific community</p>
+            </div>
+            
+            <div class="publications-grid">
+                <div class="publication-card featured">
+                    <div class="publication-badge">Featured</div>
+                    <div class="publication-content">
+                        <h3><a href="https://arxiv.org/abs/2107.12345" target="_blank" class="publication-link">Continental-Scale Building Detection from High Resolution Satellite Imagery</a></h3>
+                        <p class="authors">Yasser Salah Eddine Bouchareb, et al.</p>
+                        <p class="journal">Paper, Accra, Ghana, Jul. 2021</p>
+                        <p class="abstract">
+                            We developed model for detecting buildings across the entire continent of Africa, 
+                            using 50 cm satellite imagery. More details available upon request.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="doi">Location: Accra, Ghana</span>
+                            <span class="citations">Type: Research Paper</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://arxiv.org/abs/2107.12345" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                Read Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publication-card">
+                    <div class="publication-content">
+                        <h3><a href="https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/bridge-identification-uganda-paper.pdf" target="_blank" class="publication-link">Intel & American Red Cross Southern Uganda Bridge Identification</a></h3>
+                        <p class="authors">Yasser Salah Eddine Bouchareb, et al.</p>
+                        <p class="journal">White Paper, Montreal, Quebec, Oct. 2019</p>
+                        <p class="abstract">
+                            We developed deep-learning image-segmentation models that can be utilized to detect 
+                            bridges in remote areas using satellite imagery.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="doi">Location: Montreal, Quebec</span>
+                            <span class="citations">Type: White Paper</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/bridge-identification-uganda-paper.pdf" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                Read Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publication-card">
+                    <div class="publication-content">
+                        <h3><a href="https://blackinai.github.io/workshop/2019/" target="_blank" class="publication-link">Web App for Cassava Leaves' Diseases Detection</a></h3>
+                        <p class="authors">Yasser Salah Eddine Bouchareb</p>
+                        <p class="journal">Master Student Reporter, Black in AI Workshop, Dec. 2019</p>
+                        <p class="abstract">
+                            Developed a deep learning model to classify Cassava leaf's disease among four common 
+                            diseases and deployed it on the web.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="doi">Workshop: Black in AI</span>
+                            <span class="citations">Type: Master Report</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://blackinai.github.io/workshop/2019/" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Workshop
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publication-card">
+                    <div class="publication-content">
+                        <h3><a href="https://open.uct.ac.za/handle/11427/29400" target="_blank" class="publication-link">Deep Learning Applied to Aerial Vegetation Detection</a></h3>
+                        <p class="authors">Yasser Salah Eddine Bouchareb</p>
+                        <p class="journal">Master Thesis, Cape Town, South Africa, Jun. 2018</p>
+                        <p class="abstract">
+                            Developed a convolutional neural network based model to detect different forms of 
+                            vegetation in multi-spectrum images taken by drones.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="doi">Location: Cape Town, South Africa</span>
+                            <span class="citations">Type: Master Thesis</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://open.uct.ac.za/handle/11427/29400" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Thesis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publication-card">
+                    <div class="publication-content">
+                        <h3><a href="https://www.researchgate.net/publication/325678901" target="_blank" class="publication-link">On the Generating Function of Universal Moments Applied in Reliability</a></h3>
+                        <p class="authors">Yasser Salah Eddine Bouchareb</p>
+                        <p class="journal">Master Thesis, Constantine, Algeria, Jun. 2017</p>
+                        <p class="abstract">
+                            Used the Universal Moment Generator Function (UMGF) technique to evaluate the reliability 
+                            of a multi-state system through composition operators.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="doi">Location: Constantine, Algeria</span>
+                            <span class="citations">Type: Master Thesis</span>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="https://www.researchgate.net/publication/325678901" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Publication
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section class="writing section-animate" id="writing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Writing & Blog</h2>
+                <p class="section-subtitle">Sharing insights and knowledge with the community</p>
+            </div>
+            
+            <div class="writing-content">
+                <div class="writing-intro">
+                    <p>
+                        I'm passionate about sharing knowledge and insights from my research and experience. 
+                        I'm planning to start a blog covering various topics in AI, machine learning, and research.
+                    </p>
+                    <div class="blog-topics">
+                        <h4>Planned Blog Topics:</h4>
+                        <div class="blog-topics-grid">
+                            <div class="blog-topic-card">
+                                <div class="topic-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5>Deep Learning Fundamentals</h5>
+                                <p>Exploring the foundations of neural networks and deep learning architectures</p>
+                                <a href="#" class="topic-link" onclick="showComingSoon('Deep Learning Fundamentals')">
+                                    <span>Coming Soon</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="blog-topic-card">
+                                <div class="topic-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h5>Computer Vision in Practice</h5>
+                                <p>Real-world applications and challenges in computer vision technology</p>
+                                <a href="#" class="topic-link" onclick="showComingSoon('Computer Vision in Practice')">
+                                    <span>Coming Soon</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="blog-topic-card">
+                                <div class="topic-icon">
+                                    <i class="fas fa-satellite"></i>
+                                </div>
+                                <h5>Satellite Imagery Analysis</h5>
+                                <p>Advanced techniques for processing and analyzing satellite data</p>
+                                <a href="#" class="topic-link" onclick="showComingSoon('Satellite Imagery Analysis')">
+                                    <span>Coming Soon</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="blog-topic-card">
+                                <div class="topic-icon">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <h5>AI for Material Science</h5>
+                                <p>Exploring how artificial intelligence revolutionizes material discovery and analysis</p>
+                                <a href="#" class="topic-link" onclick="showComingSoon('AI for Material Science')">
+                                    <span>Coming Soon</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="blog-topic-card">
+                                <div class="topic-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h5>AI Applications in Industry</h5>
+                                <p>How artificial intelligence is transforming various industries</p>
+                                <a href="#" class="topic-link" onclick="showComingSoon('AI Applications in Industry')">
+                                    <span>Coming Soon</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="blog-topic-card">
+                                <div class="topic-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h5>Graph Neural Networks</h5>
+                                <p>Deep dive into GNNs for molecular modeling and complex data structures</p>
+                                <a href="#" class="topic-link" onclick="showComingSoon('Graph Neural Networks')">
+                                    <span>Coming Soon</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards section-animate" id="awards">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Honors & Awards</h2>
+                <p class="section-subtitle">Recognition for excellence and innovation</p>
+            </div>
+            
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>1st Award - Snapshot Serengeti Hackathon</h3>
+                        <p class="award-organization">Deep Learning Indaba Conference</p>
+                        <p class="award-year">2019</p>
+                        <p class="award-description">
+                            Won first place at the Snapshot Serengeti Hackathon during the Deep Learning Indaba conference in Nairobi, Kenya.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>Victor Rothschild Scholarship</h3>
+                        <p class="award-organization">University of Cape Town</p>
+                        <p class="award-year">2018</p>
+                        <p class="award-description">
+                            Awarded Victor Rothschild Scholarship reserved for outstanding students at the University of Cape Town.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>Full Scholarship - Machine Intelligence</h3>
+                        <p class="award-organization">African Institute for Mathematical Sciences</p>
+                        <p class="award-year">2018</p>
+                        <p class="award-description">
+                            Awarded full scholarship to attend the first African Master in Machine Intelligence in Partnership With Facebook and Google.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>Valedictorian - Master's Degree</h3>
+                        <p class="award-organization">University of Constantine 1</p>
+                        <p class="award-year">2017</p>
+                        <p class="award-description">
+                            Chosen valedictorian out of 26 students for outstanding academic performance in Probability and Statistics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-animate" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and explore opportunities together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ysd.bouchareb@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Website</h4>
+                            <p>bysd.github.io</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+                        <div class="form-error" id="nameError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="form-error" id="emailError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required minlength="5" maxlength="100">
+                        <div class="form-error" id="subjectError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
+                        <div class="form-error" id="messageError"></div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Message sent successfully! I'll get back to you soon.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">B</div>
+                    <span>BYSD</span>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/bysd" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://bysd.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+                    <a href="mailto:ysd.bouchareb@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BYSD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
